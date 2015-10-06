@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1.jumbotron TODO LIST
+	div(class='container')
+		for todo in todos
+			.panel-body
+				div(class='container tasks') #{todo.content} Created the task at #{todo.updated_at}
+				form(action='/todos/destroy/#{todo._id}', method='post', id='deletebutton')
+					br
+					input.btn.btn-default(type='submit', value='Delete')
+	form(method='post', action='/todos/create')
+		.input-group
+			input.form-control(type='text', placeholder='Add your task!!', name='content')
+			span.input-group-btn
+				input(type='submit', value='Add Todo')

@@ -1,0 +1,28 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container {
+	text-align: center;
+	max-width:60%;
+}
+
+.panel-body {
+	font-size: 15px;
+	margin-bottom:20px;
+}
+
+.tasks {
+	text-align: center;
+}
+
+.text-center {
+	font-style: italic;
+	color: @gray-dark: ;
+}
+
